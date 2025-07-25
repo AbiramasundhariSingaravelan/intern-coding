@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="
+        http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+<bean id="abean" class="com.example.demo.Address">
+<constructor-arg name="dno">
+			<value>3/42</value>
+		</constructor-arg>
+		<constructor-arg name="street">
+			<value>South Street</value>
+		</constructor-arg>
+		<constructor-arg name="city">
+			<value>Mayiladuthurai</value>
+		</constructor-arg>
+		<constructor-arg name="state">
+			<value>TamilNadu</value>
+		</constructor-arg>
+		<constructor-arg>
+			<value>India</value>
+		</constructor-arg>
+</bean>
+    <!-- bean definitions here -->
+	<bean id="sbean" class="com.example.demo.Student">
+		<constructor-arg name="rollno">
+			<value>100</value>
+		</constructor-arg>
+		<constructor-arg name="name">
+			<value>Arthi</value>
+		</constructor-arg>
+		<constructor-arg ref="abean">
+		</constructor-arg>
+	</bean>
+</beans>
