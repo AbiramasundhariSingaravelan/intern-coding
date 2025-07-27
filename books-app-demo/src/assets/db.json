@@ -1,0 +1,16 @@
+{
+  "books": [
+    {
+      "id": "100",
+      "name": "React Basics",
+      "price": 450,
+      "pubname": "Gugan Publications"
+    },
+    {
+      "id": "200",
+      "name": "React Basics",
+      "price": 450,
+      "pubname": "Gugan Publications"
+    }
+  ]
+}
